@@ -21,11 +21,11 @@ describe("template spec", () => {
     cy.get('[data-test="country"]').select("Serbia");
     cy.get('[data-test="country"]').should("have.value", "RS");
     cy.get('[data-test="phone"]').type("0640000000");
-    cy.get('[data-test="email"]').type("demouser144@gmail.com");
+    cy.get('[data-test="email"]').type("demouser044@gmail.com");
     cy.get('[data-test="password"]').type("Test123#");
     cy.get('[data-test="register-submit"]').click();
     cy.url().should("eq", "https://practicesoftwaretesting.com/#/auth/login");
-    cy.get('[id="email"]').type("demouser144@gmail.com");
+    cy.get('[id="email"]').type("demouser044@gmail.com");
     cy.get('[id="password"]').type("Test123#");
     cy.get('[data-test="login-submit"]').click();
     cy.url().should("eq", "https://practicesoftwaretesting.com/#/account");
