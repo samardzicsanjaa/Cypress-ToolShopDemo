@@ -1,7 +1,7 @@
 ///<reference types="cypress" />
 
-describe("template spec", () => {
-  it("passes", () => {
+describe("PurchaseFlow", () => {
+  it("RegistrationLoginAndPurchase", () => {
     cy.visit("https://practicesoftwaretesting.com/");
     cy.url().should("eq", "https://practicesoftwaretesting.com/#/");
     cy.get('[data-test="nav-sign-in"]').click();
